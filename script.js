@@ -1,3 +1,5 @@
+let vars = {};
+
 function parseParams(search){let res = search.replace("?", ""); return res;}
 
 let url = parseParams(window.location.search)
