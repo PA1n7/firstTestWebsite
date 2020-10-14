@@ -10,10 +10,11 @@ if(url.includes("&")){
 
 try {
   console.log(urlList)
+  for (param in urlList){
+    vars[param.split("=")[0]] = param.split("=")[1]
+  }
 }catch{
   vars[url.split("=")[0]] = url.split("=")[1]
 }
 
-let name = vars["name"];
-
-console.log(vars.name);
+console.log(vars);
