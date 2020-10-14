@@ -11,7 +11,7 @@ if(url.includes("&")){
 try {
   console.log(urlList)
   for (param in urlList){
-    vars[param.split("=")[0]] = param.split("=")[1]
+    vars[urlList[param].split("=")[0]] = urlList[param].split("=")[1]
   }
 }catch{
   vars[url.split("=")[0]] = url.split("=")[1]
