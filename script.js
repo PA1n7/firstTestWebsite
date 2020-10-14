@@ -9,7 +9,7 @@ if(url.includes("&")){
 }
 
 try {
-  console.log(urlList)
+  console.warn("Warning: This is a warning!\n", urlList)
   for (param in urlList){
     vars[urlList[param].split("=")[0]] = urlList[param].split("=")[1]
   }
