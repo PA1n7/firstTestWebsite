@@ -5,7 +5,7 @@ function parseParams(search){let res = search.replace("?", ""); return res;}
 let url = parseParams(window.location.search)
 
 if(url.includes("&")){
-  let urlList = url.split("&"); 
+  var urlList = url.split("&"); 
 }
 
 try {
